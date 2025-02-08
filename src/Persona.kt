@@ -14,7 +14,7 @@ open class Persona(val nombre: String, private var edad: Int) {
         return "Persona(nombre = $nombre, edad = ${mostrarEdad()})"
     }
 
-    private fun mostrarEdad(): Int{
+    fun mostrarEdad(): Int{
         return edad
     }
 
