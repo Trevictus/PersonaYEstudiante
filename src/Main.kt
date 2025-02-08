@@ -1,10 +1,10 @@
 fun main(){
     val persona1 = Persona("Sherry", 34)
 
-    println("${persona1.nombre} ${persona1.edad}")
+    println("${persona1.nombre} ${persona1.mostrarEdad()}")
 
     println(persona1.cumple())
-    println("${persona1.nombre} ${persona1.edad}")
+    println("${persona1.nombre} ${persona1.mostrarEdad()}")
     println(persona1)
 
 

@@ -1,4 +1,4 @@
-open class Persona(val nombre: String, var edad: Int) {
+open class Persona(val nombre: String, private var edad: Int) {
 
     init{
         require(nombre.isNotEmpty()){"El nombre no puede estar vacío."}
@@ -11,10 +11,10 @@ open class Persona(val nombre: String, var edad: Int) {
     }
 
     override fun toString(): String {
-        return "Persona(nombre = $nombre, edad = $edad)"
+        return "Persona(nombre = $nombre, edad = ${mostrarEdad()})"
     }
 
-    fun mostrarEdad(): Int{
+    private fun mostrarEdad(): Int{
         return edad
     }
 
