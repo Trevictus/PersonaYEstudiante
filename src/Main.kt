@@ -11,8 +11,8 @@ fun main(){
     val persona2 = Persona("Alfredo", 24)
     val estudiante1 = Estudiante("Speedy Gonzales", 16, "100 metros lisos")
 
-    persona2.actividad()
-    estudiante1.actividad()
+    println(persona2.actividad())
+    println(estudiante1.actividad())
 
     val estudiante2 = Estudiante("Dory", -1, "Ingeniería química")
 

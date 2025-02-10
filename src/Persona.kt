@@ -18,8 +18,8 @@ open class Persona(val nombre: String, private var edad: Int) {
         return edad
     }
 
-    open fun actividad(){
-        println("$nombre está realizando una actividad.")
+    open fun actividad(): String{
+        return "$nombre está realizando una actividad."
 
     }
 }
