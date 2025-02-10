@@ -5,7 +5,8 @@ class Estudiante(nombre:String, edad: Int, private val carrera: String): Persona
     }
 
     override fun actividad(){
-        println("En el puesto nº1, $nombre que está en la carrera de $carrera.")
+        super.actividad()
+        println("En el puesto nº1, en la carrera de $carrera.")
 
     }
 }
